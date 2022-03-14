@@ -19,7 +19,7 @@
     "dotenv": "^14.3.2"
   },
   "devDependencies": {
-    "dotenv": "^14.3.2",
+  
     "nodemon": "^2.0.15"
   }
 }
