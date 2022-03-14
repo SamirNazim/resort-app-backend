@@ -12,10 +12,11 @@ const propertyController = require('./controllers/PropertyController.js')
 // cors
 const allowlist = ['http://localhost:3000', 'https://serene-mcnulty-69a424.netlify.app/']
 
-app.use((req,res,next)=>{
-  res.header("Access-Control-Allow-Origin",'*');
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
-});
+  });
 
 const corsOptionsDelegate = function (req, callback) {
   var corsOptions;
