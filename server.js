@@ -10,7 +10,7 @@ const propertyController = require('./controllers/PropertyController.js')
 
 
 // cors
-const allowlist = ['http://localhost:3000', 'https://musing-goodall-22df41.netlify.app']
+const allowlist = ['http://localhost:3000', 'https://serene-mcnulty-69a424.netlify.app/']
 const corsOptionsDelegate = function (req, callback) {
   var corsOptions;
   if (allowlist.indexOf(req.header('Origin')) !== -1) {
